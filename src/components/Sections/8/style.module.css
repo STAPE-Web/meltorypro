@@ -1,0 +1,49 @@
+.Section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    margin-top: 200px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.Section h2 {
+    color: #1A2024;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.96px;
+}
+
+.Section p {
+    color: #1A2024;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.Cards {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+@media screen and (max-width: 425px) {
+    .Section {
+        margin-top: 80px;
+    }
+
+    .Section h2 {
+        font-size: 24px;
+        line-height: 20px;
+        font-weight: 700;
+    }
+
+    .Cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,52 @@
+.Select {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.Touchabe {
+    width: 100%;
+    border: 1px solid #A4B3FF;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F0F3FF;
+}
+
+.Touchabe p {
+    text-align: start;
+    font-size: 16px;
+    color: #051151;
+}
+
+.Touchabe svg {
+    color: #2242F9;
+    width: 24px;
+    height: 24px;
+    transition: 0.5s;
+}
+
+.Select.Active .Touchabe svg {
+    transform: rotate(180deg);
+}
+
+.List {
+    background: #fff;
+    border: 1px solid #A4B3FF;
+    border-radius: 8px;
+    padding: 8px 0;
+}
+
+.List div {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.List div:hover {
+    background: #A4B3FF;
+    color: #fff;
+}

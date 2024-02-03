@@ -1,0 +1,30 @@
+.Tabs {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #FFF;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.Tabs div {
+    display: flex;
+    height: 40px;
+    padding: 0px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-right: 1px solid #B9CDFF;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Tabs div:hover {
+    background: #ffffff40;
+}
+
+.Tabs div.Active {
+    background: #fff;
+    color: #051151;
+}

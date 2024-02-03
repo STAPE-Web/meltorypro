@@ -1,0 +1,106 @@
+.Signal {
+    width: 100%;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 16px;
+    background: #F8F9FF;
+}
+
+.Title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.Title h3 {
+    color: #202020;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.Title p {
+    color: #5E646E;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.PNL30D,
+.PNL3M {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.PNL30D h4 {
+    color: #202020;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.96px;
+}
+
+.PNL30D p {
+    color: #202020;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+.PNL3M h4 {
+    color: #202020;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.PNL3M p {
+    color: #202020;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.PNL {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+@media screen and (max-width: 425px) {
+    .Signal {
+        min-width: 280px;
+    }
+
+    .Title h3 {
+        font-size: 16px;
+    }
+
+    .PNL30D h4 {
+        font-size: 36px;
+        line-height: 100%;
+    }
+
+    .PNL30D p,
+    .PNL3M p {
+        font-size: 14px;
+    }
+
+    .PNL {
+        gap: 16px;
+    }
+
+    .PNL3M h4 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .Signal button {
+        width: 100%;
+    }
+}

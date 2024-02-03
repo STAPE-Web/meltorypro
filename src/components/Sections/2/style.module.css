@@ -1,0 +1,144 @@
+.Section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 24px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.Section h2 {
+    color: #1A2024;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.96px;
+}
+
+.Section h2 span {
+    color: color(display-p3 0.1333 0.2588 0.9765);
+}
+
+.Box {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+}
+
+.Signals {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.OR {
+    display: flex;
+    padding: 0px 24px 4px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 72px;
+    background: #04F;
+    width: fit-content;
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.72px;
+    margin-top: -16px;
+    z-index: 10;
+}
+
+.Signal {
+    width: 100%;
+    background: url("/waves.svg") no-repeat;
+    background-size: cover;
+    border-radius: 24px;
+    background-color: #F8F9FF;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 40px 0;
+    justify-content: center;
+    margin-top: -16px;
+}
+
+.Info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Info h3 {
+    color: #1A2024;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.Info p {
+    color: #1A2024;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.Image {
+    position: absolute;
+    left: 200px;
+}
+
+.Signals::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 425px) {
+    .Signal {
+        flex-direction: column;
+        background-position: center center;
+        margin-top: 16px;
+        padding: 24px;
+    }
+
+    .Signal button {
+        width: 100%;
+    }
+
+    .Info {
+        align-items: flex-start;
+    }
+
+    .Info p {
+        text-align: start;
+    }
+
+    .Image {
+        position: static;
+    }
+
+    .Section h2 {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 700;
+    }
+
+    .OR {
+        display: none;
+    }
+
+    .Signals {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .Section {
+        gap: 24px;
+        margin-top: 80px;
+    }
+}

@@ -1,0 +1,18 @@
+.Button {
+    display: flex;
+    height: 40px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+    border: 1px solid #EEF3FF;
+    transition: .5s;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}

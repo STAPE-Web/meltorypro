@@ -1,0 +1,32 @@
+.Button {
+    display: flex;
+    height: 40px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background: #fff;
+    transition: .5s;
+    color: #04F;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.Button:hover {
+    background: #012FFF0F;
+    color: #00189ECB;
+}
+
+
+.Button:active {
+    background: #0032F719;
+    color: #00189ECB;
+}
+
+.Button:disabled {
+    color: #00189ECB;
+}

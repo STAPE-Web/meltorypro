@@ -1,0 +1,30 @@
+.Button {
+    display: flex;
+    height: 40px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background: #012FFF0F;
+    transition: .5s;
+    color: #00189ECB;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.Button:hover {
+    background: #0032F719;
+}
+
+
+.Button:active {
+    background: #0027ED26;
+}
+
+.Button:disabled {
+    background: #FFFFFF;
+}

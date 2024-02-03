@@ -1,0 +1,27 @@
+.Message {
+    border-radius: 8px;
+    background: #FFD700;
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.Box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Triangle {
+    width: 12px;
+    height: 12px;
+    background: #FFD700;
+    transform: rotate(45deg);
+    margin-top: -6px;
+}

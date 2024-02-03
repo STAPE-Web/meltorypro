@@ -1,0 +1,28 @@
+.IconButton {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.IconButton:hover {
+    background: #012FFF0F;
+    color: #00189ECB;
+}
+
+
+.IconButton:active {
+    background: #0032F719;
+    color: #00189ECB;
+}
+
+.IconButton:disabled {
+    color: #00189ECB;
+}

@@ -1,0 +1,54 @@
+.MobileMenu {
+    left: -100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: 0.5s;
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.MobileMenu.Active {
+    left: 0;
+}
+
+.Top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+}
+
+.CloseIcon {
+    width: 24px;
+    height: 24px;
+    color: rgba(0, 7, 19, 62.4%);
+}
+
+ul {
+    padding: 0 16px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: #60646C;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.Buttons {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Buttons button {
+    width: 100%;
+}

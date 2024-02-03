@@ -1,0 +1,33 @@
+.Nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Nav h4 {
+    color: #D3D4DD;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.Nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Nav ul li {
+    color: #5E646E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Nav ul li:hover {
+    color: #2242F9;
+}

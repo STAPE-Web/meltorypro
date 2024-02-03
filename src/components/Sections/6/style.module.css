@@ -1,0 +1,38 @@
+.Section {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 16px;
+    border-radius: 24px;
+    background: #FFD700;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Textbox h2 {
+    color: #1A2024;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.96px;
+}
+
+.Textbox p {
+    color: #1A2024;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 425px) {
+    .Section {
+        display: none;
+    }
+}

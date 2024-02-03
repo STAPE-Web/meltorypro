@@ -1,0 +1,61 @@
+.Section {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 16px;
+    border-radius: 24px;
+    border: 1px solid #DDDDE5;
+    background: #F9FAFE;
+    padding: 70px 50px 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Textbox h2 {
+    color: #1A2024;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.96px;
+}
+
+.Textbox p {
+    color: #1A2024;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.Images {
+    position: relative;
+}
+
+.Image1 {
+    z-index: 10;
+    position: relative;
+}
+
+.Image2 {
+    position: absolute;
+    top: -50px;
+    left: -100px;
+}
+
+.Image3 {
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 425px) {
+    .Section {
+        display: none;
+    }
+}
