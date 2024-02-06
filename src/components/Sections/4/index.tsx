@@ -11,7 +11,7 @@ import MobileImage4 from "@/assets/Mobile/Section_4_4.png"
 
 const Section4 = () => {
     return (
-        <section className={styles.Section}>
+        <section className={styles.Section} id="FeaturesWhiteLabel">
             <h2>Features of our White Label</h2>
             <p>Eget in non egestas luctus. Sit sed netus nunc sollicitudin porta <br /> blandit. Amet at tempor turpis elit et vulputate condimentum sed id.</p>
 

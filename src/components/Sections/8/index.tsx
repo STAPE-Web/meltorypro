@@ -4,7 +4,7 @@ import styles from "./style.module.css"
 
 const Section8 = () => {
     return (
-        <section className={styles.Section}>
+        <section className={styles.Section} id="OurFunctionality">
             <h2>Our functionality</h2>
             <p>Set up payment options for clients for connecting to the signal: by <br /> subscription or for a share of the income</p>
 

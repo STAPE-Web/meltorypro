@@ -40,8 +40,8 @@
     }
 
     .Logo,
-    .Buttons button:nth-child(2),
-    .Buttons button:nth-child(3) {
+    .Buttons>button:nth-child(1),
+    .Buttons>button:nth-child(2) {
         display: none;
     }
 

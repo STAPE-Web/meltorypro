@@ -2,7 +2,7 @@ import styles from "./style.module.css"
 
 const Section9 = () => {
     return (
-        <section className={styles.Section}>
+        <section className={styles.Section} id="Pricing">
             <h2>Pricing</h2>
 
             <div>

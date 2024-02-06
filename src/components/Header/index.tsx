@@ -13,22 +13,21 @@ const Header = () => {
     return (
         <header className={styles.Header}>
             <Logo className={styles.Logo} />
+            <img src={LogoMobile} className={styles.LogoMobile} alt='' />
 
             <div className={styles.Buttons}>
-                <img src={LogoMobile} className={styles.LogoMobile} alt='' />
-
                 <IconButton onClick={() => ({})}>
                     <GlobeIcon className={styles.Icon} />
                 </IconButton>
 
                 <ButtonBrandTertiary onClick={() => ({})}>Sign in</ButtonBrandTertiary>
                 <ButtonBrandPrimary onClick={() => ({})}>Get started</ButtonBrandPrimary>
-            </div>
 
-            <div className={styles.IconButtonBox}>
-                <IconButton onClick={() => changeMobileMenu(true)}>
-                    <MenuIcon className={styles.MenuIcon} />
-                </IconButton>
+                <div className={styles.IconButtonBox}>
+                    <IconButton onClick={() => changeMobileMenu(true)}>
+                        <MenuIcon className={styles.MenuIcon} />
+                    </IconButton>
+                </div>
             </div>
         </header>
     );

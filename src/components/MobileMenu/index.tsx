@@ -11,12 +11,18 @@ const MobileMenu = () => {
     const changeMobileMenu = useGlobalStore(state => state.changeMobileMenu)
 
     const navList = [
-        { name: "About signals ", link: "" },
-        { name: "Calculate your income", link: "" },
-        { name: "Features of our White Label", link: "" },
-        { name: "Our functionality", link: "" },
-        { name: "Pricing", link: "" },
+        { name: "About signals ", link: "#AboutSignals" },
+        { name: "Calculate your income", link: "#CalculateIncome" },
+        { name: "Features of our White Label", link: "#FeaturesWhiteLabel" },
+        { name: "Our functionality", link: "#OurFunctionality" },
+        { name: "Pricing", link: "#Pricing" },
     ]
+
+    function anchorNavigate(link: string) {
+        const anchor = document.querySelector(link)
+        anchor?.scrollIntoView({ behavior: 'smooth' })
+        changeMobileMenu(false)
+    }
 
     return (
         <div className={`${styles.MobileMenu} ${mobileMenu ? styles.Active : ""}`}>
@@ -29,7 +35,7 @@ const MobileMenu = () => {
 
             <ul>
                 {navList.map((nav, index) => (
-                    <li key={index}>{nav.name}</li>
+                    <li key={index} onClick={() => anchorNavigate(nav.link)}>{nav.name}</li>
                 ))}
             </ul>
 
