@@ -34,7 +34,7 @@
     display: none;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1000px) {
     .Header {
         padding: 8px 16px;
     }

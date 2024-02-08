@@ -31,7 +31,7 @@
     height: 125px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1000px) {
     .Section {
         margin-top: 80px;
     }

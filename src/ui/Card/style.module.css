@@ -29,7 +29,7 @@
     font-size: 40px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1000px) {
     .Cards {
         padding: 16px;
         gap: 8px;

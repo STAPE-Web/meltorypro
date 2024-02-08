@@ -76,7 +76,7 @@
     opacity: 0.7;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1000px) {
     .Section {
         padding: 24px;
     }

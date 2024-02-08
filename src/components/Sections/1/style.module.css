@@ -65,7 +65,7 @@
     margin-top: -500px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1000px) {
     .Box h1 {
         font-size: 24px;
         line-height: 30px;
