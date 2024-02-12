@@ -1,17 +1,53 @@
 .Header {
     width: 100%;
+    border-bottom: 1px solid #DDDDE3;
+    position: fixed;
+    z-index: 100;
+    background: #fff;
+    top: 0;
+}
+
+.Container {
+    margin: 0 auto;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1280px;
     padding: 16px 32px;
-    margin: 0 auto;
+}
+
+.Header ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: #60646C;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 100%;
+    padding: 0;
+    gap: 24px;
+    list-style: none;
+}
+
+.Header ul li {
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.LogoBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .Buttons {
     display: flex;
     align-items: center;
     gap: 16px;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 .Icon {
@@ -35,7 +71,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .Header {
+    .Container {
         padding: 8px 16px;
     }
 
@@ -48,5 +84,13 @@
     .LogoMobile,
     .IconButtonBox {
         display: flex;
+    }
+
+    .Header ul {
+        display: none;
+    }
+
+    .LogoBox {
+        width: fit-content;
     }
 }

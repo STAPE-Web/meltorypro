@@ -11,10 +11,10 @@ const MobileMenu = () => {
     const changeMobileMenu = useGlobalStore(state => state.changeMobileMenu)
 
     const navList = [
-        { name: "About signals ", link: "#AboutSignals" },
+        { name: "White label", link: "#AboutSignals" },
         { name: "Calculate your income", link: "#CalculateIncome" },
-        { name: "Features of our White Label", link: "#FeaturesWhiteLabel" },
-        { name: "Our functionality", link: "#OurFunctionality" },
+        { name: "Features", link: "#FeaturesWhiteLabel" },
+        { name: "Functionality", link: "#OurFunctionality" },
         { name: "Pricing", link: "#Pricing" },
     ]
 

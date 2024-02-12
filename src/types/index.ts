@@ -1,8 +1,11 @@
 export type ISignal = {
     name: string
-    description: string
-    PNL30D: number
-    PNL3M: number
+    owner: string
+    ROI7D: number
+    ROI30D: number
+    maxDrowdown: number,
+    copiers: number
+
 }
 
 export type ICard = {

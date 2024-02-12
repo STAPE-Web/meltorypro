@@ -6,7 +6,7 @@ import Image from "@/assets/Section_2_1.png"
 
 const Section2 = () => {
     return (
-        <section className={styles.Section} id="AboutSignals">
+        <section className={styles.Section}>
             <h2>Сhoose one of our <span>ready-made <br /> signals</span> or You can run your own signal </h2>
 
             <div className={styles.Box}>

@@ -1,7 +1,8 @@
 import { ISignal } from "@/types"
 import { FC } from "react"
-import ButtonBrandSecondary from "../Buttons/Brand/Secondary"
 import styles from "./style.module.css"
+import Chart from "@/assets/Chart"
+import Avatar from "@/assets/Avatar.png"
 
 interface Props {
     signal: ISignal
@@ -11,23 +12,43 @@ const Signal: FC<Props> = ({ signal }) => {
     return (
         <div className={styles.Signal}>
             <div className={styles.Title}>
-                <h3>{signal.name}</h3>
-                <p>{signal.description}</p>
-            </div>
+                <img src={Avatar} alt="" />
 
-            <div className={styles.PNL}>
-                <div className={styles.PNL30D}>
-                    <h4>+{signal.PNL30D}%</h4>
-                    <p>PNL last 30D</p>
-                </div>
-
-                <div className={styles.PNL3M}>
-                    <h4>+{signal.PNL3M}%</h4>
-                    <p>PNL last 3M</p>
+                <div>
+                    <h3>{signal.name}</h3>
+                    <p>{signal.owner}</p>
                 </div>
             </div>
 
-            <ButtonBrandSecondary onClick={() => ({})}>Get started</ButtonBrandSecondary>
+            <Chart className={styles.Chart} />
+
+            <div className={styles.InfoBox} >
+                <div className={styles.Row}>
+                    <div className={styles.Start}>
+                        <h3>+{signal.ROI7D}%</h3>
+                        <p>7D ROI</p>
+                    </div>
+
+                    <div className={styles.End}>
+                        <h3>{signal.maxDrowdown}%</h3>
+                        <p>Max Drowdown</p>
+                    </div>
+                </div>
+
+                <div className={styles.Row}>
+                    <div className={styles.Start}>
+                        <h3>+{signal.ROI7D}%</h3>
+                        <p>30D ROI</p>
+                    </div>
+
+                    <div className={styles.End}>
+                        <h3>{signal.copiers}</h3>
+                        <p>Copiers</p>
+                    </div>
+                </div>
+            </div>
+
+            <button>More</button>
         </div>
     )
 }

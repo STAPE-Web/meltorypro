@@ -1,5 +1,5 @@
 export const signals = [
-    { name: "👑 Our Signal 1", description: "You can change the name to the name of your brand", PNL30D: 430, PNL3M: 123 },
-    { name: "Our Signal 1", description: "You can change the name to the name of your brand", PNL30D: 430, PNL3M: 123 },
-    { name: "Our Signal 1", description: "You can change the name to the name of your brand", PNL30D: 430, PNL3M: 123 },
+    { name: "Winner GPT", owner: "Olivia Rhye", ROI7D: 150, ROI30D: 150, maxDrowdown: 43, copiers: 34 },
+    { name: "Winner GPT", owner: "Olivia Rhye", ROI7D: 150, ROI30D: 150, maxDrowdown: 43, copiers: 34 },
+    { name: "Winner GPT", owner: "Olivia Rhye", ROI7D: 150, ROI30D: 150, maxDrowdown: 43, copiers: 34 },
 ]

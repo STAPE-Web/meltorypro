@@ -1,7 +1,7 @@
 .Section {
     max-width: 1200px;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 80px;
 }
 
 .Section h2 {
@@ -145,6 +145,10 @@
 
 .Slide:nth-child(1) img {
     margin-left: 20px;
+}
+
+.AnchorBox {
+    transform: translateY(-100px);
 }
 
 @media screen and (max-width: 1000px) {

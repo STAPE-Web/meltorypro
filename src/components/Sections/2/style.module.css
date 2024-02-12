@@ -38,6 +38,7 @@
 .OR {
     display: flex;
     padding: 0px 24px 4px 24px;
+    height: 36px;
     justify-content: center;
     align-items: center;
     gap: 8px;
@@ -49,7 +50,7 @@
     font-weight: 600;
     line-height: 44px;
     letter-spacing: -0.72px;
-    margin-top: -16px;
+    margin-top: -8px;
     z-index: 10;
 }
 
@@ -58,13 +59,14 @@
     background: url("/waves.svg") no-repeat;
     background-size: cover;
     border-radius: 24px;
-    background-color: #F8F9FF;
+    background-color: #fff;
     display: flex;
     align-items: center;
     position: relative;
     padding: 40px 0;
     justify-content: center;
-    margin-top: -16px;
+    margin-top: -8px;
+    border: 1px solid #D3D4DB;
 }
 
 .Info {

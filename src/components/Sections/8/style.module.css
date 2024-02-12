@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 16px;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 80px;
     max-width: 1200px;
     width: 100%;
 }
@@ -30,6 +30,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+}
+
+.AnchorBox {
+    transform: translateY(-100px);
 }
 
 @media screen and (max-width: 1000px) {

@@ -1,0 +1,21 @@
+stages:
+  - deploy-dev
+
+deploy-dev:
+  stage: deploy-dev
+  image: node:18-alpine
+#  tags:
+#    - fargate-dev
+  only:
+    - dev
+  script:
+    - npm install
+    - npm run build
+    - wget https://dl.min.io/client/mc/release/linux-amd64/mc
+    - chmod +x mc
+    - ls -lah dist/
+    - ./mc alias set s3 https://s3.amazonaws.com $AWS_ACCESS_KEY_ID $AWS_SECRET_ACCESS_KEY
+    - ./mc mirror --overwrite dist/ s3/meltory-pro/
+  artifacts:
+    paths:
+      - dist/

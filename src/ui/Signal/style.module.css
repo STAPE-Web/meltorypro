@@ -1,106 +1,94 @@
 .Signal {
     width: 100%;
     display: flex;
-    padding: 24px;
+    padding: 16px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
+    gap: 16px;
     border-radius: 16px;
-    background: #F8F9FF;
+    background: #fff;
+    border: 1px solid #D3D4DB;
 }
 
 .Title {
     display: flex;
-    flex-direction: column;
-    gap: 4px;
+    align-items: center;
+    gap: 10px;
 }
 
-.Title h3 {
-    color: #202020;
-    font-size: 18px;
+.Title div h3 {
+    font-size: 14px;
     font-weight: 600;
-    line-height: 28px;
+    line-height: 20px;
+    color: #1C2024;
 }
 
-.Title p {
-    color: #5E646E;
+.Title div p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    color: #60646C;
+}
+
+.Chart {
+    width: 100%;
+}
+
+.InfoBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.End {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Row h3 {
+    color: #1C2024;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.Row p {
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
+    color: #60646C;
 }
 
-.PNL30D,
-.PNL3M {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
+.Start h3 {
+    color: #30A46C;
 }
 
-.PNL30D h4 {
-    color: #202020;
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 60px;
-    letter-spacing: -0.96px;
-}
-
-.PNL30D p {
-    color: #202020;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-top: 8px;
-}
-
-.PNL3M h4 {
-    color: #202020;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
-}
-
-.PNL3M p {
-    color: #202020;
+.Signal button {
+    background: #00003B0D;
+    width: 100%;
+    height: 40px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: #0007139F;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 20px;
 }
 
-.PNL {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
 
 @media screen and (max-width: 1000px) {
     .Signal {
         min-width: 280px;
-    }
-
-    .Title h3 {
-        font-size: 16px;
-    }
-
-    .PNL30D h4 {
-        font-size: 36px;
-        line-height: 100%;
-    }
-
-    .PNL30D p,
-    .PNL3M p {
-        font-size: 14px;
-    }
-
-    .PNL {
-        gap: 16px;
-    }
-
-    .PNL3M h4 {
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    .Signal button {
-        width: 100%;
     }
 }
