@@ -24,3 +24,9 @@ main {
 body {
     zoom: 85%;
 }
+
+@media screen and (max-width: 1000px) {
+    body {
+        zoom: 100%;
+    }
+}
