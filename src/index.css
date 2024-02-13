@@ -20,3 +20,7 @@ main {
     padding: 0 16px;
     margin-top: 72px;
 }
+
+body {
+    zoom: 85%;
+}
